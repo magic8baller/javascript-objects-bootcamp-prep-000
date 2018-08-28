@@ -1,6 +1,6 @@
 let playlist = {
-    'Jackson 5': 'Who\'s Loving You',
-    'Violent Femmes': 'Add It Up',
+    ['Jackson 5']: 'Who\'s Loving You',
+    ['Violent Femmes']: 'Add It Up',
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
