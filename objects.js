@@ -1,6 +1,6 @@
 var playlist = {
   'Violent Femmes': 'Add It Up',
-  'The Whispers': 'And The Beat Goes On',
+  'The Whispers': 'And The Beat Goes On'
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
