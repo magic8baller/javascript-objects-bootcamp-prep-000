@@ -4,16 +4,15 @@ var playlist = {
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  // Remember, because one of this function's arguments
-  // is `playlist`, the `playlist` _inside_ the function
-  // is not the same as the top-level `playlist` outside
-  // the function
+//use dot notation: key is always taken as the literal string given!
+//SO: to access values of a VARIABLE KEY, require bracket notation
   playlist[artistName] = songTitle;
 
   return playlist;
 }
 
 function removeFromPlaylist(playlist, artistName) {
+  //same as above: to access values of a VARIABLE KEY, require bracket notation
   delete playlist[artistName];
 
   return playlist;
