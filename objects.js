@@ -1,20 +1,14 @@
-var playlist = {
-  'Foo Fighters': 'Everlong',
-  Prince: 'Purple Rain'
+let playlist = {
+    'Jackson 5': 'Who\'s Loving You',
+    'Violent Femmes': 'Add It Up',
 }
 
-function updatePlaylist(playlist, artist, song) {
-  // Remember, because one of this function's arguments
-  // is `playlist`, the `playlist` _inside_ the function
-  // is not the same as the top-level `playlist` outside
-  // the function
-  playlist[artist] = song
-
-  return playlist
+function updatePlaylist(playlist, artistName, songTitle) {
+    playlist[artistName] = songTitle;
+    return playlist;
 }
 
-function removeFromPlaylist(playlist, artist) {
-  delete playlist[artist]
-
-  return playlist
+function removeFromPlaylist(playlist, artistName, songTitle) {
+    delete playlist.artistName;
+    return playlist;
 }
