@@ -1,5 +1,6 @@
 var playlist = {
   'Violent Femmes': 'Add It Up',
+  //will not pass with oxford comma!
   'The Whispers': 'And The Beat Goes On'
 }
 
@@ -14,6 +15,7 @@ function updatePlaylist(playlist, artistName, songTitle) {
 }
 
 function removeFromPlaylist(playlist, artistName) {
+  //no quotations in bracket because are using a VARIABLE to refer to the key artistName, not an actual string!
   delete playlist[artistName];
 
   return playlist;
